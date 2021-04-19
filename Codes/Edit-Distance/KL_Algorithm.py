@@ -8,10 +8,10 @@ zero_threshold = 0.00001
 class KMNode(object):
     def __init__(self, id, expection=0, match=None, visit=False):
         '''
-        :param id: 结点编号
-        :param expection: 结点期望值
-        :param match: 结点的匹配对象
-        :param visit: 结点是否被访问
+        :param id: node id
+        :param expection: node expectation
+        :param match: node matching
+        :param visit: whether node has been visited
         '''
         self.id = id
         self.expection = expection
