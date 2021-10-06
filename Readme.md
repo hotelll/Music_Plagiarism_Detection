@@ -14,7 +14,7 @@ There are two datasets which are introduced in our paper. `dataset` includes 9 p
 There are two directories in the Codes directory.
 ## Edit-Distance
 
-realization of our MEMFS method. There is a detailed `Readme.md` in this directory to introduce the files included.
+realization of our BMM-Det method. There is a detailed `Readme.md` in this directory to introduce the files included.
 ## N-gram
 
 realization of baselines. There is a detailed `Readme.md` in this directory to introduce the files included.
