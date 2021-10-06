@@ -1,4 +1,4 @@
-# Music plagiarism detection algorithm
+# Music Plagiarism Detection via Bipartite Graph Matching
 ## Environment:
 >```python
 >numpy==1.19.4
