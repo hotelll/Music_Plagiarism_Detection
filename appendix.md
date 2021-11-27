@@ -3,9 +3,7 @@
 
 ## Tune piece length $l$
 
-We firstly tune the hyperparameter piece length. We can find that the optimal length is **7** as a short piece cannot well represent the melody while a long piece is not sensitive to plag-degree. A piece length of 7 is about two to three bars in music, which explains why
-
-they are optimal.
+We firstly tune the hyperparameter piece length. We can find that the optimal length is **7** as a short piece cannot well represent the melody while a long piece is not sensitive to plag-degree. A piece length of 7 is about two to three bars in music, which explains why they are optimal.
 
 | Piece Length | Average Index |  Accuracy  |
 | :----------: | :-----------: | :--------: |
@@ -23,7 +21,7 @@ they are optimal.
 
 ## Tune the overlapping rate $r$
 
-Then we tune the overlapping rate. We find that **0.9** is the best overlap rate for two datasets since it can best detect plagiarism but will high time consumption.
+Then we tune the overlapping rate. We find that **0.9** is the best overlap rate for two datasets since it can best detect plagiarism, but with high time complexity.
 
 | Overlap Rate | Average Index |  Accuracy  |
 | :----------: | :-----------: | :--------: |
@@ -42,7 +40,7 @@ Then we tune the overlapping rate. We find that **0.9** is the best overlap rate
 
 ## Tune on duration weight $k_{duration}$
 
-Next, we tune the duration weight $k_{duration}$. We find that 0 is optimal $k_{duration}$, which means considering duration can harm the performance. The reason may be that the relative duration will omit some valuable information of duration.
+Next, we tune the duration weight $k_{duration}$. We find that 0 is optimal $k_{duration}$, which means considering duration can harm the performance. The reason is that the relative duration will omit the impact of speed, which is important to the overall expression of music.
 
 | $k_{duration}$ | Average Index |  Accuracy  |
 | :------------: | :-----------: | :--------: |
@@ -60,7 +58,7 @@ Next, we tune the duration weight $k_{duration}$. We find that 0 is optimal $k_{
 
 ## Tune on downbeat weight $k_{downbeat}$
 
-Finally, we test different weights of downbeats.  We get the optimal downbeat **2** for accuracy, which adds proper importance to the downbeats since it affects the rhythm and emotion of music.
+Finally, we test different weights of downbeats.  We get the optimal downbeat **2** for accuracy, which adds proper weights to the downbeats since it affects the rhythm and emotion of music more than others.
 
 | $k_{downbeat}$ | Average Index | Accuracy |
 | :------------: | :-----------: | :------: |
