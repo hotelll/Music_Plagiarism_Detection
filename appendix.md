@@ -1,5 +1,4 @@
-# Extended Experiments - Music Plagiarism Detection via Bipartite Graph Matching
-
+# Appendix: Extended Experiments
 
 
 ## Tune piece length $l$
